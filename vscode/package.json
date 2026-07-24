@@ -1,0 +1,49 @@
+{
+  "name": "platita",
+  "displayName": "Platita \u2014 get paid while your AI thinks",
+  "description": "Sponsored line in your editor's status bar + Claude Code statusline. 70% of ad revenue paid to you in USDT (TRC-20). Wallet = account, no KYC.",
+  "version": "0.2.0",
+  "publisher": "platita",
+  "license": "MIT",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "claude",
+    "claude code",
+    "usdt",
+    "earn",
+    "statusline",
+    "crypto",
+    "tron"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PinnacleDynamics/platita-client"
+  },
+  "homepage": "https://platita.lat",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "platita.connect",
+        "title": "Platita: Connect account"
+      },
+      {
+        "command": "platita.openPanel",
+        "title": "Platita: Open my panel (platita.lat)"
+      },
+      {
+        "command": "platita.disconnect",
+        "title": "Platita: Disconnect"
+      }
+    ]
+  }
+}
