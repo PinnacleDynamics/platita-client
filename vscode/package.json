@@ -1,8 +1,8 @@
 {
   "name": "platita",
   "displayName": "Platita \u2014 get paid while your AI thinks",
-  "description": "Sponsored line in your editor's status bar + Claude Code statusline. 70% of ad revenue paid to you in USDT (TRC-20). Wallet = account, no KYC.",
-  "version": "0.2.0",
+  "description": "Sponsored line in your editor's status bar + Claude Code statusline. Counted only while you're actually working. 70% of ad revenue paid to you in USDT (TRC-20).",
+  "version": "0.3.0",
   "publisher": "platita",
   "license": "MIT",
   "icon": "icon.png",
@@ -44,6 +44,16 @@
         "command": "platita.disconnect",
         "title": "Platita: Disconnect"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Platita",
+      "properties": {
+        "platita.adAnimation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Slide the sponsored line in (marquee) when it changes. Turn off for a static line."
+        }
+      }
+    }
   }
 }

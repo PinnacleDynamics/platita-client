@@ -39,7 +39,12 @@ Payouts every Friday from $10, verifiable on Tronscan.
 - **Official hooks only** — we use Claude Code's `statusLine` hook and the editor's
   status-bar API. We never patch the editor bundle, weaken CSP, or inject code.
 - **Minimal data** — your account token and impression counts. Never your code,
-  prompts, AI responses, files or paths. The whole client is auditable above.
+  prompts, AI responses, files or paths. To tell whether the AI is actually working,
+  the extension reads only the *modification time* of Claude Code's session file —
+  never a byte of its contents.
+- **Billed on real attention** — an impression counts only while the window is focused
+  and you're actually working. Idle window, minimized, away from the keyboard: nothing
+  is counted.
 - **Your wallet is your account** — no email, no KYC, no custody. Payouts in USDT
   (TRC-20), verifiable on Tronscan. 70% of ad revenue is yours.
 - **Uninstall in 10 seconds** — one settings key; your balance lives on your wallet.
