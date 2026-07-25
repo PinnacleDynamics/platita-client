@@ -5,8 +5,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **[platita.lat](https://platita.lat)** shows one sponsored text line while your AI codes —
-in Claude Code's status line and in your editor's status bar — and pays you **70% of the
-ad revenue** in **USDT (TRC-20)**, straight to your wallet. No banks, no paperwork, no KYC.
+in your editor's status bar and in Claude Code's terminal status line — and pays you
+**70% of the ad revenue** in **USDT (TRC-20)**, straight to your wallet. No banks, no
+paperwork, no KYC.
+
+**Any AI assistant counts.** The editor extension lives in VS Code / Cursor / Windsurf's own
+status bar, so it works whether you code with **Copilot, ChatGPT, Claude, Gemini** or the
+built-in agents. Claude Code users additionally get the line in the terminal.
 
 This repository is the **complete code that runs on your machine**: the terminal client
 *and* the editor extension. Both are tiny and dependency-free, so you can read every line
@@ -14,7 +19,7 @@ before running them.
 
 ## Install
 
-**Option A — editor extension** (VS Code, Cursor, Windsurf)
+**Option A — editor extension** (VS Code, Cursor, Windsurf — with any AI assistant)
 
 Install **Platita** from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=platita.platita)
 or [Open VSX](https://open-vsx.org/extension/platita/platita), then `Cmd/Ctrl+Shift+P` →

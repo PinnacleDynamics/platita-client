@@ -1,8 +1,12 @@
 # Platita — get paid while your AI thinks
 
-While Claude Code works, its status line shows one sponsored text line — and
+While your AI writes code, one sponsored text line sits in your editor's status bar — and
 **[platita.lat](https://platita.lat) pays you 70% of the ad revenue in USDT (TRC-20)**,
 straight to your wallet. Your wallet IS your account: no banks, no KYC, no paperwork.
+
+**Works with any AI assistant** — Copilot, ChatGPT, Claude, Gemini, Cursor's or Windsurf's
+built-in agents. The extension lives in the editor's own status bar, so it doesn't care which
+assistant you use. Claude Code users additionally get the line in the terminal status line.
 
 ## Quick start (30 seconds)
 
