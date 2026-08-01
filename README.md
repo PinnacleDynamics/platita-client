@@ -90,13 +90,15 @@ Copy button.
 **Data sent to platita.lat:** your account token, ad impression counts. That's the entire
 list. **Never sent:** your code, prompts, AI responses, files, paths, or anything else.
 
-## What you'll actually earn
+## Zero effort by design
 
-Let's be blunt: this is beer money, not a salary. A dev coding with AI most of the day sees
-roughly 150 impressions, which is **a few dollars a month** at current rates (CPM $2–4, your
-share 70%). The point is to make your AI subscription hurt less, not to replace income.
+You install it once and never touch it again. You're already staring at the screen while
+your AI works — now that time pays you back. **70% of every ad dollar is yours**, and every
+dev you invite adds +10% on top, for life.
 
-Impressions are also capped server-side (4/min, 600/day) — this is an ad network, not a farm.
+How much that adds up to depends on ad demand and how much you code — we'd rather you see
+it in your own panel than trust a promise on a page. Impressions are rate-capped server-side
+(4/min, 600/day): this is an ad network, not a farm.
 
 ## Earn more
 
