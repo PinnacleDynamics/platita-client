@@ -25,22 +25,45 @@ Install **Platita** from the [VS Code Marketplace](https://marketplace.visualstu
 or [Open VSX](https://open-vsx.org/extension/platita/platita), then `Cmd/Ctrl+Shift+P` →
 **"Platita: Connect account"** → paste your token. Your live balance shows in the status bar.
 
-**Option B — terminal** (one line)
+**Option B — terminal** (one line, for Claude Code CLI)
 
-Create an account at [platita.lat/panel.html](https://platita.lat/panel.html)
-(your TRON wallet IS your account), then:
+**macOS / Linux**
 
 ```sh
 curl -fsS https://platita.lat/i | sh -s -- --token plt_YOUR_TOKEN
 ```
 
-Restart Claude Code. Done — the sponsored line rotates and your balance accrues.
-Payouts every Friday from $10, verifiable on Tronscan.
+**Windows (PowerShell)**
+
+```powershell
+& ([scriptblock]::Create((irm https://platita.lat/i.ps1))) -Token plt_YOUR_TOKEN
+```
+
+Or run `irm https://platita.lat/i.ps1 | iex` and it will ask for the token. The Windows
+script looks for `py -3`, then `python`, then `python3` — whichever you have.
+
+Restart Claude Code afterwards. The sponsored line starts rotating and your balance accrues.
+
+**Requirements:** Python 3.8+ (the terminal client is stdlib-only). The editor extension
+needs no Python for the status-bar line.
+
+### Where do I get the token?
+
+Open [platita.lat/panel.html](https://platita.lat/panel.html) and either:
+
+- paste a **TRON (TRC-20) address** — that address *is* your account, or
+- sign in with **[Telegram](https://t.me/platitalatbot)** if you don't have a crypto wallet —
+  you then get paid inside Telegram, with no address and no network fee.
+
+No email, no password, no KYC either way. Your `plt_…` token appears in the panel with a
+Copy button.
 
 ## Why it's safe by design
 
-- **Open source, end to end** — this terminal client *and* the editor extension
-  ([`vscode/`](vscode/)) are both here. Read every line before you run it.
+- **Open source, end to end** — everything that runs on your machine is in this repo:
+  the terminal client, the editor extension ([`vscode/`](vscode/)) and even the one-line
+  bootstrap scripts ([`i.sh`](i.sh), [`i.ps1`](i.ps1)) that `curl | sh` and `irm | iex`
+  fetch. Nothing you execute is hidden on a server.
 - **Official hooks only** — we use Claude Code's `statusLine` hook and the editor's
   status-bar API. We never patch the editor bundle, weaken CSP, or inject code.
 - **Minimal data** — your account token and impression counts. Never your code,
@@ -66,6 +89,14 @@ Payouts every Friday from $10, verifiable on Tronscan.
 
 **Data sent to platita.lat:** your account token, ad impression counts. That's the entire
 list. **Never sent:** your code, prompts, AI responses, files, paths, or anything else.
+
+## What you'll actually earn
+
+Let's be blunt: this is beer money, not a salary. A dev coding with AI most of the day sees
+roughly 150 impressions, which is **a few dollars a month** at current rates (CPM $2–4, your
+share 70%). The point is to make your AI subscription hurt less, not to replace income.
+
+Impressions are also capped server-side (4/min, 600/day) — this is an ad network, not a farm.
 
 ## Earn more
 
