@@ -104,6 +104,26 @@ Impressions are also capped server-side (4/min, 600/day) — this is an ad netwo
 for life** — from our share, not theirs. Your invite link is in
 [your panel](https://platita.lat/panel.html).
 
+## For advertisers
+
+One plain-text line (60 characters + your URL) on the most-watched screen in software:
+the developer's editor, while their AI writes code.
+
+- **Audience:** developers using AI assistants (Copilot, ChatGPT, Claude, Gemini) —
+  Spanish-first, worldwide delivery
+- **Country targeting:** pick countries and budget share on a map; enforced server-side
+  by the developer's IP, so it can't be spoofed
+- **Billed on attention, not "impressions":** a view counts only while the editor window
+  is focused and the developer is actually working; views during real AI wait-states are
+  flagged separately as premium inventory
+- **Self-serve, crypto-native:** pay in USDT (TRC-20 on-chain, or in two taps via
+  CryptoBot inside Telegram), budgets from **$1**, live stats, pause or stop anytime —
+  unspent budget is refunded to your balance
+- **CPM $2–4** depending on frequency
+
+Start here: [platita.lat/anunciantes.html](https://platita.lat/anunciantes.html) ·
+questions: ads@platita.lat
+
 ## Uninstall (10 seconds)
 
 Remove the `statusLine` key from `~/.claude/settings.json` (a backup
